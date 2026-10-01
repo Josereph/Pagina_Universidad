@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menú de opciones de la Toolbar -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ifRoom: se muestran como ícono si hay espacio en la barra -->
+    <item
+        android:id="@+id/action_buscar"
+        android:icon="@drawable/ic_buscar"
+        android:title="@string/action_buscar"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_compartir"
+        android:icon="@drawable/ic_compartir"
+        android:title="@string/action_compartir"
+        app:showAsAction="ifRoom" />
+
+    <!-- never: siempre quedan dentro del menú de los tres puntos -->
+    <item
+        android:id="@+id/action_acerca"
+        android:title="@string/action_acerca"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_salir"
+        android:title="@string/action_salir"
+        app:showAsAction="never" />
+
+</menu>

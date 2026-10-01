@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DrawerLayout: contenedor raíz que permite deslizar el menú lateral.
+     Hijo 1 = contenido principal. Hijo 2 = el menú (NavigationView). -->
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.ComponentesGrupo2"
+    tools:openDrawer="start">
+    <!-- android:theme ayuda a la vista Design a encontrar el tema de la app.
+         tools:openDrawer="start" muestra el menú lateral abierto en Design.
+         Nada de esto cambia cómo se ve la app en el teléfono. -->
+
+
+    <!-- ===================================================== -->
+    <!-- HIJO 1: CONTENIDO PRINCIPAL (Toolbar + vistas) -->
+    <!-- ===================================================== -->
+
+    <LinearLayout
+        android:id="@+id/contenido_principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/principal"
+        android:orientation="vertical">
+
+        <!-- Toolbar: se convierte en la ActionBar desde Java con setSupportActionBar() -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/principal"
+            android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+            app:titleTextColor="@color/white" />
+
+        <!-- Aquí se coloca la vista elegida en el menú (Carreras, Noticias o Contacto) -->
+        <FrameLayout
+            android:id="@+id/contenedor_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/fondo" />
+
+    </LinearLayout>
+
+
+    <!-- ===================================================== -->
+    <!-- HIJO 2: MENÚ LATERAL -->
+    <!-- layout_gravity="start" = sale desde la izquierda -->
+    <!-- ===================================================== -->
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/tarjeta"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:menu="@menu/drawer_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

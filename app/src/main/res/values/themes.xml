@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- NoActionBar: quitamos la barra por defecto porque usamos nuestra propia Toolbar -->
+    <style name="Base.Theme.ComponentesGrupo2" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/principal</item>
+        <item name="colorOnPrimary">@color/white</item>
+                <item name="colorSecondaryContainer">@color/principal_claro</item>
+        <item name="colorOnSecondaryContainer">@color/principal</item>
+        <item name="android:colorBackground">@color/fondo</item>
+    </style>
+
+    <style name="Theme.ComponentesGrupo2" parent="Base.Theme.ComponentesGrupo2" />
+</resources>

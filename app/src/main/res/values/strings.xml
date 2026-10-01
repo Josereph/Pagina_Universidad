@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Componentes_grupo2</string>
+
+    <!-- ================================================= -->
+    <!-- NAVIGATION DRAWER -->
+    <!-- ================================================= -->
+
+    <string name="drawer_abrir">Abrir menú</string>
+    <string name="drawer_cerrar">Cerrar menú</string>
+    <string name="header_titulo">Mi Universidad</string>
+    <string name="header_subtitulo">Información para estudiantes</string>
+    <string name="menu_carreras">Carreras</string>
+    <string name="menu_noticias">Noticias</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_otros">Otros</string>
+
+    <!-- ================================================= -->
+    <!-- MENÚ DE LA TOOLBAR -->
+    <!-- ================================================= -->
+
+    <string name="action_buscar">Buscar</string>
+    <string name="action_compartir">Compartir app</string>
+    <string name="action_acerca">Acerca de</string>
+    <string name="action_salir">Salir</string>
+    <string name="msg_buscar">Búsqueda próximamente</string>
+    <string name="texto_compartir">Mira la app informativa de Mi Universidad: carreras, noticias y contacto en un solo lugar.</string>
+    <string name="texto_acerca">Componentes_grupo2 v1.0\n\nApp informativa de la universidad para demostrar el Navigation Drawer y la Toolbar con menú de opciones.</string>
+
+    <!-- ================================================= -->
+    <!-- DIÁLOGOS -->
+    <!-- ================================================= -->
+
+    <string name="btn_cerrar">Cerrar</string>
+    <string name="desc_icono">Ícono</string>
+    <string name="desc_foto">Foto</string>
+</resources>

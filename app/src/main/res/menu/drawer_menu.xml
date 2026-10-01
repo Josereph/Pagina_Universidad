@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Opciones del Navigation Drawer: una por cada vista -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- checkableBehavior="single": solo una opción queda marcada a la vez -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_carreras"
+            android:icon="@drawable/ic_escuela"
+            android:title="@string/menu_carreras" />
+        <item
+            android:id="@+id/nav_noticias"
+            android:icon="@drawable/ic_noticias"
+            android:title="@string/menu_noticias" />
+        <item
+            android:id="@+id/nav_contacto"
+            android:icon="@drawable/ic_telefono"
+            android:title="@string/menu_contacto" />
+    </group>
+
+    <!-- Submenú: aparece separado con su propio título -->
+    <item android:title="@string/menu_otros">
+        <menu>
+            <item
+                android:id="@+id/nav_acerca"
+                android:icon="@drawable/ic_info"
+                android:title="@string/action_acerca" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ================================================= -->
+    <!-- COLORES DE LA APP (rojo y blanco de la universidad) -->
+    <!-- ================================================= -->
+
+    <color name="principal">#B90000</color>        <!-- rojo: Toolbar, íconos y detalles -->
+    <color name="principal_claro">#FDECEC</color>  <!-- rojo muy suave: etiquetas y selección del menú -->
+    <color name="fondo">#F7F7F7</color>            <!-- fondo de las pantallas -->
+    <color name="tarjeta">#FFFFFF</color>          <!-- fondo de las tarjetas -->
+    <color name="texto">#1F2937</color>            <!-- texto principal -->
+    <color name="texto_gris">#6B7280</color>       <!-- texto secundario -->
+
+    <!-- ================================================= -->
+    <!-- CAPAS SOBRE LAS FOTOS (para que el texto se lea) -->
+    <!-- ================================================= -->
+
+    <color name="capa_roja">#C7B90000</color>      <!-- rojo semitransparente (cabecera del menú) -->
+    <color name="capa_oscura">#8C000000</color>    <!-- negro semitransparente (banners) -->
+    <color name="fondo_logo">#FEFAEE</color>       <!-- fondo crema del logo de la biblioteca -->
+</resources>
